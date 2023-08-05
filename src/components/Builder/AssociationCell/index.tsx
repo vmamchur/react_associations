@@ -90,7 +90,7 @@ const AssociationCell: FC<IProps> = ({ label, onIncrease, onDecrease }) => {
     onDecrease();
   }, [onDecrease]);
 
-  let content = <h3 className="font-semibold text-2xl">{label}</h3>;
+  let content = <h3 className="font-semibold text-l xl:text-2xl">{label}</h3>;
 
   if (isHovering || isDraggingOver) {
     content = (
@@ -147,7 +147,7 @@ const AssociationCell: FC<IProps> = ({ label, onIncrease, onDecrease }) => {
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}
       onDragOver={handleDragOver}
-      className="w-[200px] h-[200px] flex justify-center items-center border"
+      className="w-[120px] h-[120px] xl:w-[200px] xl:h-[200px] flex justify-center items-center border"
     >
       {content}
       <input

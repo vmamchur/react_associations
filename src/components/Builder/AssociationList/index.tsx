@@ -45,7 +45,10 @@ const AssociationList = () => {
 
   return (
     <div>
-      <div ref={listRef} className="w-[600px] flex flex-wrap relative">
+      <div
+        ref={listRef}
+        className="w-[360px] xl:w-[600px] flex flex-wrap relative"
+      >
         {associations.map((association) => (
           <AssociationCell
             key={association}
