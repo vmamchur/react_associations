@@ -6,15 +6,15 @@ import html2canvas from 'html2canvas';
 import AssociationCell from '../AssociationCell';
 
 const associations = [
-  'anime/movie',
-  'hobby',
-  'animal',
-  'character',
-  'color',
-  'place',
-  'season',
-  'song',
-  'food/drink',
+  'аниме/фильм',
+  'хобби',
+  'животное',
+  'персонаж',
+  'цвет',
+  'место',
+  'пора года',
+  'песня',
+  'еда/напиток',
 ];
 
 const AssociationList = () => {
@@ -60,7 +60,7 @@ const AssociationList = () => {
             hidden: filledAssociationsCount !== associations.length,
           })}
         >
-          Capture Screenshot 📸
+          щелкнуть и скачать 📸
         </button>
       </div>
     </div>
