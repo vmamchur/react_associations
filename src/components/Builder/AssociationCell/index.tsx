@@ -39,6 +39,8 @@ const AssociationCell: FC<IProps> = ({ label, onIncrease, onDecrease }) => {
         };
 
         reader.readAsDataURL(file);
+
+        setIsHovering(false);
       }
     },
     [onIncrease]
